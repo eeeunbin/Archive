@@ -20,7 +20,7 @@ a{
 .about .container{
   max-width: 1200px;
   width: 100%;
-  margin: 10% auto;
+  margin: 8% auto;
 }
 .about .about-wrap{
   font-family: 'Noto Sans KR', sans-serif;
@@ -31,7 +31,7 @@ a{
 .about .about-wrap .profile{
   display: flex;
   justify-content: center;
-  gap: 10%;
+  gap: 20%;
   margin: 50px auto;
 }
 .about .about-wrap .profile .img-wrap{
@@ -99,4 +99,71 @@ a{
   position: absolute;
   bottom: -50%; left: 50%;
   transform: translate(-50%,-50%);
+}
+.about-wrap .interview .container{
+  width: 100%;
+  margin: 0 auto;
+}
+.about-wrap .interview .container h3{
+  margin: 10% 0 auto;
+}
+.about-wrap .interview .container .interview-video{
+  margin: 0 auto;
+}
+.about-wrap .interview .container .interview-video img{
+  
+}
+.about-wrap .interview .container p{}
+
+
+/* === Modal === */
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* width: 100%; */
+  /* height: 100%; */
+  z-index: 999;
+}
+.modal.show{display: block;}
+.modal .dim{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fffdf5ce;
+}
+.modal .dim::after{
+  content: 'X';
+  background-color: #99bcdd;
+  color: #1e5670;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.modal .item_box{
+  position: relative;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 630px;
+  border: 5px solid;
+}
+.modal .item_box iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

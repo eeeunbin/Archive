@@ -20,3 +20,14 @@ $(document).ready(function(){
   skill("#ai",0.5)
   skill("#c4",0.4)
 })
+$(document).ready(function(){
+  $('.container .interview-video').click(function(){
+    $('.modal').addClass("show")
+    $('.modal').append(`<div class="item_box">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/${$(this).data("video")}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`)
+  })
+  $('.modal .dim').click(function(){
+    $('.modal .item_box').remove()
+    $('.modal').removeClass('show')
+  })
+})
