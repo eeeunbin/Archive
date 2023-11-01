@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+
+.contact{
+  background: linear-gradient(to top, #000 0%, #fff 100%) no-repeat;
+  height: 863px;
+}
+.contact .container{
+  max-width: 1200px;
+  width: 100%;
+  height: 80%;
+  margin: 100px auto;
+}
+.contact .container .contact-wrap{
+
+}
+.contact .sns{
+
+}
+.contact .sns ul{
+  /* display: flex;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  grid-template-rows: auto;
+  margin-top: 50p;
+}
+.contact .sns ul .card{
+  width: 150px;
+  height: 150px;
+  margin: 80px;
+  box-shadow: 20px 20px 50px rgba(0,0,0,.5);
+  background: rgba(255,255,255,.1);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,.5);
+  border-left: 1px solid rgba(255,255,255,.5);
+  background: url(../img/youtube.svg) no-repeat center;
+  background-size: 90%;
+  overflow: hidden;  
+}
+.contact .sns ul .card:nth-child(1){
+  background: url(../img/phone-solid.svg) no-repeat center;
+  background-size: 90%;
+}
+.contact .sns ul .card:nth-child(2){
+  background: url(../img/envelope-regular.svg) no-repeat center;
+  background-size: 90%;
+}
+.contact .sns ul .card:nth-child(3){
+  background: url(../img/comment-regular.svg) no-repeat center;
+  background-size: 90%;
+}
+.contact .sns ul .card:nth-child(4){
+  background: url(../img/facebook.svg) no-repeat center;
+  background-size: 90%;
+}
+.contact .sns ul .card:nth-child(5){
+  background: url(../img/instagram.svg) no-repeat center;
+  background-size: 90%;
+}
+.contact .sns ul .card .content{
+  /* width: 100%; */
+  /* height: 100%; */
+  word-break: break-all;
+  /* padding: 5px; */
+  text-align: center;
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: .5s;
+  display: flex;
+  align-items: center;
+}
+.contact .sns ul .card:hover .content{
+  /* width: 100%; */
+  /* height: 100%; */
+  border-radius: 5px;
+  background-color: rgba(255,255,255,.8);
+  transform: translateY(0);
+  opacity: 1;
+}
+.contact .sns ul li{
+/* padding: 50px 30px; */
+  /* flex-basis: 10%; */
+  /* height: 50px; */
+  /* text-align: center; */
+
+}
+.contact .sns ul li a img{
+  /* width: 40px;
+  height: 40px; */
+}
+.contact .sns ul li a{
+  
+}
+.contact .sns ul li p{
+  font-size: 20px;
+}
+
+.contact-wrap .text{
+  width: 50%;
+  margin: 5% auto;
+}
+.contact-wrap .text p{
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
