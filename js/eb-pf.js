@@ -10,6 +10,17 @@ $(document).ready(function(){
     $('.modal .item_box').remove()
     $('.modal').removeClass('show')
   })
+  let tabMenu = $('.tabMenu li'),
+  tabSlider = $('.tabs > div')
+  tabMenu.click(function(){
+  tabMenu.removeClass('active')
+  $(this).addClass("active")
+  tabSlider.hide();
+  let target = $(this).find('a').attr("href")
+  $(target).show()
+  })
+  tabMenu.eq(0).trigger('click')
+
   var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     slidesPerView: 1,

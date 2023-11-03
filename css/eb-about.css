@@ -16,11 +16,13 @@ a{
 }
 /* about */
 .about{
+  
 }
 .about .container{
   max-width: 1200px;
   width: 100%;
   margin: 8% auto;
+  margin-bottom: 0;
 }
 .about .about-wrap{
   font-family: 'Noto Sans KR', sans-serif;
@@ -38,21 +40,27 @@ a{
   flex-basis: 40%;
 }
 .about .about-wrap .profile .img-wrap img{
-  height: 100%;
+  width: 100%;
+  
 }
 .about .about-wrap .profile .text{
-  flex-basis: 50%;
+  flex-basis: 60%;
   font-weight: 700;
   /* text-align: center; */
 }
 .about .about-wrap .profile .text h3{
   padding: 20px 0;
 }
-.about .about-wrap .profile .text p{}
-.about .about-wrap .profile .text a{}
+.about .about-wrap .profile .text p{
+  line-height: 30px;
+}
+.about .about-wrap .profile .text a{
+  padding: 15px;
+}
 /* progress */
 .about-wrap .skills{
   width: 100%;
+  margin-top: 5%;
 }
 .about-wrap .skills h3{
 }
@@ -61,10 +69,11 @@ a{
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 5%; */
-  width: 60%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5,2fr);
-  gap: 5%;
+  column-gap: 10%;
+  row-gap: 40%;
 }
 #ae{
 }
@@ -86,9 +95,14 @@ a{
   /* flex-basis: 7%;
   margin-bottom: 50px; */
   position: relative;
+  width: 100%;
+}
+.about-wrap .skills .sk-icon .progress .progressbar-text {
+  position: absolute;
+  top: 165% !important;
 }
 .about-wrap .skills .progress img{
-  width: 40px;
+  width: 85%;
   border-radius: 50px;
   position: absolute;
   left: 50%;
@@ -98,23 +112,40 @@ a{
 .about-wrap .skills .sk-icon .progress p{
   position: absolute;
   bottom: -50%; left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,0);
+}
+.about-wrap .skills .sk-icon .progress .setText{
+  position: absolute;
+  bottom: -50%; left: 50%;
+  transform: translate(-50%,0);
 }
 .about-wrap .interview .container{
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .about-wrap .interview .container h3{
-  margin: 10% 0 auto;
+  margin: 5%;
 }
 .about-wrap .interview .container .interview-video{
   margin: 0 auto;
 }
 .about-wrap .interview .container .interview-video img{
+  outline: -10px;
+  outline-color: white;
+  outline-offset: -11px;
+  outline-width: 2px;
+  outline-style: solid;
+}
+.about-wrap .interview .container p{
+  color: #fff;
+  margin: 5% auto;
+}
+
+.footer{
   
 }
-.about-wrap .interview .container p{}
-
 
 /* === Modal === */
 .modal{

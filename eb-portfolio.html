@@ -6,7 +6,9 @@
   <title>Portfolio</title>
   <!-- swiper css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- 메뉴 css -->
   <link rel="stylesheet" href="css/eunbin.css">
+  <!-- pf css -->
   <link rel="stylesheet" href="css/eb.portfolio.css">
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -37,65 +39,88 @@
 <section class="portfolio">
   <div class="container">
     <h2>Portfolio</h2>
-    <div class="band swiper mySwiper">
-      <div class="pf swiper-wrapper">
-        <div class="swiper-slide card-wrap">
-          <a href="#" class="card" data-video="Vm18xcaG6KA">
-            <div class="view width">
-              <img src="img/꽃 무빙포스터.gif" alt="">
+    <ul class="tabMenu">
+      <li>
+        <a href="#tabs-1">
+          <h3>Shorts</h3>
+        </a>
+      </li>
+      <li>
+        <a href="#tabs-2">
+          <h3>Video</h3>
+        </a>
+      </li>
+    </ul>
+    <div class="tabs">
+      <div id="tabs-1">
+        <div class="band swiper mySwiper">
+          <div class="pf swiper-wrapper">
+            <div class="swiper-slide card-wrap">
+              <a href="#" class="card" data-video="Vm18xcaG6KA">
+                <div class="view width">
+                  <img src="img/꽃 무빙포스터.gif" alt="">
+                </div>
+              </a>
+              <div class="desc">
+                <h3>무빙포스터</h3>
+                <p>GLOW AND GROW 무빙포스터</p>
+              </div>
             </div>
-          </a>
-          <div class="desc">
-            <h3>무빙포스터</h3>
-            <p>GLOW AND GROW 무빙포스터</p>
+            <div class="swiper-slide card-wrap">
+            <a href="#" class="card" data-video="UrPIHDyYBhg">
+              <div class="view width">
+                <img src="img/뮤직 무빙포스터.gif" alt="">
+              </div>
+            </a>
+              <div class="desc">
+                <h3>무빙포스터</h3>
+                <p>MUSIC 무빙포스터</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="swiper-slide card-wrap">
-         <a href="#" class="card" data-video="UrPIHDyYBhg">
-          <div class="view width">
-            <img src="img/뮤직 무빙포스터.gif" alt="">
-          </div>
-        </a>
-          <div class="desc">
-            <h3>무빙포스터</h3>
-            <p>MUSIC 무빙포스터</p>
-          </div>
-        </div>
-        <div class="swiper-slide card-wrap">
-         <a href="#" class="card" data-video="Rl5_qtNN5Ko">
-          <div class="view height">
-            <img src="img/대충 끝까지 버터.gif" alt="">
-          </div>
-        </a>
-          <div class="desc">
-            <h3>타이포그래피</h3>
-            <p>방탄소년단의 버터 타이포그래피를 카피해 보았습니다</p>
-          </div>
-        </div>
-        <div class="swiper-slide card-wrap">
-         <a href="#" class="card" data-video="Rl5_qtNN5Ko">
-          <div class="view height">
-            <img src="img/진짜 최종 캐릭터.gif" alt="">
-          </div>
-        </a>
-          <div class="desc">
-            <h3>캐릭터 애니메이션</h3>
-            <p>만화 그래비티폴즈의 메이블이라는 캐릭터를 카피하며 캐릭터의 얼굴을 움직이는 패스애니메이션을 제작해보았습니다.</p>
-          </div>
-        </div>
-        <div class="swiper-slide card-wrap">
-         <a href="#" class="card" data-video="aQnl8ZJmrIw">
-          <div class="view height">
-            <img src="img/자동차 진짜 최최최종.gif" alt="">
-          </div>
-        </a>
-          <div class="desc">
-            <h3>자동차 애니메이션</h3>
-            <p>제주도 해안도로를 달리는 자동차를 패스애니메이션으로 그려서 익스프레션 효과를 넣어 달리는 모션을 주었습니다.</p>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div id="tabs-2">
+        <div class="band swiper mySwiper">
+          <div class="pf swiper-wrapper">
+            <div class="swiper-slide card-wrap">
+            <a href="#" class="card" data-video="Rl5_qtNN5Ko">
+              <div class="view height">
+                <img src="img/대충 끝까지 버터.gif" alt="">
+              </div>
+            </a>
+              <div class="desc">
+                <h3>타이포그래피</h3>
+                <p>방탄소년단의 버터 타이포그래피를 카피해 보았습니다</p>
+              </div>
+            </div>
+            <div class="swiper-slide card-wrap">
+            <a href="#" class="card" data-video="Rl5_qtNN5Ko">
+              <div class="view height">
+                <img src="img/진짜 최종 캐릭터.gif" alt="">
+              </div>
+            </a>
+              <div class="desc">
+                <h3>캐릭터 애니메이션</h3>
+                <p>만화 그래비티폴즈의 메이블이라는 캐릭터를 카피하며 캐릭터의 얼굴을 움직이는 패스애니메이션을 제작해보았습니다.</p>
+              </div>
+            </div>
+            <div class="swiper-slide card-wrap">
+            <a href="#" class="card" data-video="aQnl8ZJmrIw">
+              <div class="view height">
+                <img src="img/자동차 진짜 최최최종.gif" alt="">
+              </div>
+            </a>
+              <div class="desc">
+                <h3>자동차 애니메이션</h3>
+                <p>제주도 해안도로를 달리는 자동차를 패스애니메이션으로 그려서 익스프레션 효과를 넣어 달리는 모션을 주었습니다.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Modal -->
