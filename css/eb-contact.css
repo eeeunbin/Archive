@@ -1,6 +1,23 @@
 @charset "utf-8";
 
-
+@font-face{
+  font-family: 'Hahmlet', serif;
+  src: url(../font/Hahmlet-Regular.ttf) format('truetype');
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url(../font/NotoSansKR-Regular.ttf) format('truetype');
+  font-family: 'Orbit', sans-serif;
+  src: url(../font/Orbit-Regular.ttf) format('truetype');
+  font-family: 'Roboto', sans-serif;
+  src: url(../font/Roboto-Regular.ttf) format('truetype');
+  font-family: 'Young Serif', serif;
+  src: url(../font/YoungSerif-Regular.ttf) format('truetype');
+}
+h2{
+  font-family: 'Young Serif', serif;
+}
+p{
+  font-family: 'Orbit', sans-serif;
+}
 .contact{
   background: linear-gradient(to top, #000 0%, #fff 100%) no-repeat;
   height: 863px;
@@ -63,9 +80,10 @@
   background-size: 90%;
 }
 .contact .sns ul .card .content{
-  width: 300px;
-  height: 100%;
-  padding: 5px;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* word-break: break-all; */
+  padding: 10%;
   text-align: center;
   position: relative;
   transform: translateY(100px);
@@ -75,7 +93,7 @@
   align-items: center;
 }
 .contact .sns ul .card:hover .content{
-  /* width: 300px; */
+  /* width: 100%; */
   /* height: 100%; */
   border-radius: 5px;
   background-color: rgba(255,255,255,.8);
@@ -97,7 +115,9 @@
   
 }
 .contact .sns ul li p{
-  font-size: 20px;
+  width: 230px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .contact-wrap .text{
@@ -107,6 +127,10 @@
 .contact-wrap .text p{
   text-align: center;
   color: #fff;
-  font-weight: bold;
+  font-size: 20px;
+  /* font-weight: bold; */
 }
-
+.footer{
+  position: absolute;
+  bottom: 0;
+}

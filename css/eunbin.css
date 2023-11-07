@@ -1,4 +1,18 @@
 @charset "utf-8";
+
+@font-face{
+  font-family: 'Hahmlet', serif;
+  src: url(../font/Hahmlet-Regular.ttf) format('truetype');
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url(../font/NotoSansKR-Regular.ttf) format('truetype');
+  font-family: 'Orbit', sans-serif;
+  src: url(../font/Orbit-Regular.ttf) format('truetype');
+  font-family: 'Roboto', sans-serif;
+  src: url(../font/Roboto-Regular.ttf) format('truetype');
+  font-family: 'Young Serif', serif;
+  src: url(../font/YoungSerif-Regular.ttf) format('truetype');
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -46,8 +60,15 @@ a{
   display: flex;
   justify-content: space-between;
 }
-.list-wrap .nav ul li{}
-.list-wrap .nav ul li a{}
+.list-wrap .nav ul li.on{
+  font-weight: bold;
+}
+.list-wrap .nav ul li a{
+  font-family: 'Roboto', sans-serif;
+}
+.list-wrap .nav ul li.on a{
+  text-decoration: underline;
+}
 
 /* 푸터 */
 .footer{
@@ -61,4 +82,5 @@ a{
   text-align: center;
   letter-spacing: -1px;
   color: #999;
+  font-family: 'Roboto', sans-serif;
 }

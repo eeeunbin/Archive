@@ -1,4 +1,18 @@
 @charset "utf-8";
+
+@font-face{
+  font-family: 'Hahmlet', serif;
+  src: url(../font/Hahmlet-Regular.ttf) format('truetype');
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url(../font/NotoSansKR-Regular.ttf) format('truetype');
+  font-family: 'Orbit', sans-serif;
+  src: url(../font/Orbit-Regular.ttf) format('truetype');
+  font-family: 'Roboto', sans-serif;
+  src: url(../font/Roboto-Regular.ttf) format('truetype');
+  font-family: 'Young Serif', serif;
+  src: url(../font/YoungSerif-Regular.ttf) format('truetype');
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -14,6 +28,8 @@ a{
   text-decoration: none;
   color: #333;
 }
+
+
 /* about */
 .about{
   
@@ -25,7 +41,7 @@ a{
   margin-bottom: 0;
 }
 .about .about-wrap{
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Orbit', sans-serif;
 }
 .about .about-wrap h2,h3{
   font-family: 'Young Serif', serif;
@@ -48,6 +64,10 @@ a{
   font-weight: 700;
   /* text-align: center; */
 }
+.about .about-wrap .profile .text .text-wrap{
+  position: relative;
+  margin-bottom: 10%;
+}
 .about .about-wrap .profile .text h3{
   padding: 20px 0;
 }
@@ -55,7 +75,12 @@ a{
   line-height: 30px;
 }
 .about .about-wrap .profile .text a{
-  padding: 15px;
+  position: absolute;
+  right: 5%; bottom: -25%;
+  padding: 7px;
+  background-color: #999;
+  border-radius: 10px;
+  line-height: 23px;
 }
 /* progress */
 .about-wrap .skills{
@@ -141,6 +166,7 @@ a{
 .about-wrap .interview .container p{
   color: #fff;
   margin: 5% auto;
+  font-size: 20px;
 }
 
 .footer{
