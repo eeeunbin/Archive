@@ -74,13 +74,18 @@ a{
 .about .about-wrap .profile .text p{
   line-height: 30px;
 }
-.about .about-wrap .profile .text a{
+.about .about-wrap .profile .text .text-wrap a{
   position: absolute;
   right: 5%; bottom: -25%;
   padding: 7px;
   background-color: #999;
   border-radius: 10px;
   line-height: 23px;
+}
+.about .about-wrap .profile .text .text-wrap a:hover{
+  color: #999;
+  background-color: #333;
+  transition-duration: .3s;
 }
 /* progress */
 .about-wrap .skills{
