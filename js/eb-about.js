@@ -27,13 +27,17 @@ $(document).ready(function(){
       }
     });
     
-    bar.animate(1.0);
+    bar.animate("#ae",0.8),
+    bar.animate("#pr",0.8),
+    bar.animate("#ps",0.5),
+    bar.animate("#ai",0.5),
+    bar.animate("#c4",0.5);
   }
-  skill("#ae",0.8)
-  skill("#pr",0.7)
-  skill("#ps",0.6)
-  skill("#ai",0.5)
-  skill("#c4",0.4)
+  skill("#ae",0.8),
+  skill("#pr",0.7),
+  skill("#ps",0.6),
+  skill("#ai",0.5),
+  skill("#c4",0.4);
 })
 $(document).ready(function(){
   $('.container .interview-video').click(function(){

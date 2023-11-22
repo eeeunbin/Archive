@@ -162,6 +162,7 @@ a{
   margin: 0 auto;
 }
 .about-wrap .interview .container .interview-video img{
+  width: 100%;
   outline: -10px;
   outline-color: white;
   outline-offset: -11px;
